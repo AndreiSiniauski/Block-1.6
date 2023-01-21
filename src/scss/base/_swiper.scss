@@ -1,0 +1,50 @@
+.swiper-pagination {
+  position: static;
+
+  @include media-tablet {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: $active-pagination-color;
+}
+
+.swiper {
+
+  &__wrapper {
+    display: flex;
+    margin: 16px 0;
+
+    @include media-tablet {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__slide {
+    display: block;
+
+    width: 240px;
+
+    @include media-tablet {
+      display: block;
+      flex-shrink: 1;
+    }
+
+    @include media-laptop {
+      margin-right: 16px;
+    }
+
+    &--hidden {
+      @include media-tablet {
+        display: none;
+      }
+
+      @include media-laptop{
+        display: block;
+      }
+    }
+  }
+}

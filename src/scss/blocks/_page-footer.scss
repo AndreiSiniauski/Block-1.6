@@ -1,0 +1,47 @@
+.page-footer {
+  @include media-laptop {
+    margin: 0 0 0 320px;
+  }
+
+  &__container {
+    border-top: 1px solid #D9FFF5;
+    padding-bottom: 19px;
+
+    @include media-tablet {
+      padding-top: 32px;
+      padding-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey-text-color;
+    opacity: 0.72;
+
+    @include media-tablet {
+      &--skript {
+        flex-basis: 33%;
+        text-align: left;
+      }
+
+      &--prav {
+        flex-basis: 33%;
+
+        :hover {
+          color: $text-color;
+          text-decoration: underline;
+        }
+      }
+
+      &--info {
+        flex-basis: 33%;
+        text-align: right;
+      }
+    }
+  }
+}

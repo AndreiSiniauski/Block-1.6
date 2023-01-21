@@ -1,0 +1,38 @@
+//base
+@import "base/fonts";
+@import "base/variables";
+@import "base/global";
+@import "base/mixin";
+@import "base/burger-menu";
+@import "base/swiper";
+@import "base/secon-text";
+
+//blocks
+@import "blocks/page";
+@import "blocks/conteiner";
+@import "blocks/page-header";
+@import "blocks/about";
+@import "blocks/icon";
+@import "blocks/feedback-icon";
+@import "blocks/repair-brend";
+@import "blocks/brends-list";
+@import "blocks/more-button";
+@import "blocks/repair-technicals";
+@import "blocks/service-praice";
+@import "blocks/btn";
+@import "blocks/list-icon";
+@import "blocks/services-list";
+@import "blocks/logo";
+@import "blocks/burger-icon";
+@import "blocks/navigation";
+@import "blocks/link-go";
+@import "blocks/technics-list";
+@import "blocks/praice-list";
+@import "blocks/page-footer";
+@import "blocks/title";
+@import "blocks/modal";
+@import "blocks/modal-feedback";
+@import "blocks/input";
+
+//Plugin
+@import "../../node_modules/swiper/swiper-bundle.css";

@@ -1,0 +1,22 @@
+.repair-brend {
+  &__container {
+    padding: 16px 0 24px;
+
+    @include media-tablet {
+      padding: 24px 0;
+    }
+
+    @include media-laptop{
+      padding: 24px 0 50px;
+    }
+  }
+
+  &__more-button {
+    display: none;
+    margin: 0 0 0 24px;
+
+    @include media-tablet {
+      display: block;
+    }
+  }
+}

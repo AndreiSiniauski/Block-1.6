@@ -1,0 +1,54 @@
+.service-praice {
+  &__container {
+    padding: 16px 0 24px;
+
+    @include media-tablet {
+      padding: 0 0 24px 0;
+    }
+
+    @include media-laptop{
+      padding: 0 0 50px 0;
+    }
+  }
+
+  &__text {
+    max-width: 420px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    width: 200px;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @include media-tablet {
+      display: inline-block;
+      margin-bottom: 47px;
+      width: auto;
+    }
+
+    @include media-laptop {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__link-arr {
+    display: inline-block;
+    background-image: url(../img/ic/more.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 10px;
+  }
+}

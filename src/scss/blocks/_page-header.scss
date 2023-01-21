@@ -1,0 +1,66 @@
+.page-header {
+  padding: 18px 17px;
+  border-bottom: 1px solid #D9FFF5;
+
+  @include media-tablet {
+    padding: 24px 24px;
+  }
+
+  @include media-laptop {
+    display: none;
+  }
+
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__burger-icon {
+    margin-right: 16px;
+  }
+
+
+  &__logo {
+    flex-grow: 2;
+
+    @include media-tablet {
+        padding-left: 15px;
+
+    &::before {
+      border-left: 2px solid #eaeaea;
+      height: 32px;
+      content: "";
+      left: 80px;
+      top: 40px;
+      position: absolute;
+      }
+    }
+  }
+
+  &__list-icon {
+    width: 96px;
+    position: relative;
+
+    :first-child::before {
+      border-left: 2px solid #eaeaea;
+      height: 32px;
+      content: "";
+      top: 4px;
+      left: -20px;
+      position: absolute;
+    }
+  }
+
+  &__icon-item {
+    &--tools {
+      background-image: url(../img/ic/repair.svg);
+    }
+
+    &--check {
+      background-image: url(../img/ic/checkstatus.svg);
+    }
+  }
+}
+
