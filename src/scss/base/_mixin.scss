@@ -5,7 +5,7 @@
 }
 
 @mixin media-laptop {
-  @media (min-width: $notbook-width) {
+  @media (min-width: $laptop-width) {
     @content;
   }
 }
