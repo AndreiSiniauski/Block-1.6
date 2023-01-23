@@ -980,6 +980,13 @@ button {
     .feedback-icon__item--contact {
       background-image: url(./static/profile.svg); }
 
+.more {
+  margin-right: 20px;
+  display: none; }
+  @media (min-width: 768px) {
+    .more {
+      display: flex; } }
+
 .repair-brend__container {
   padding: 16px 0 24px; }
   @media (min-width: 768px) {
@@ -1418,7 +1425,8 @@ button {
 
 .modal.active {
   display: block;
-  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 200vw rgba(255, 255, 255, 0.9); }
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2), 0 0 0 200vw rgba(255, 255, 255, 0.9);
+  transform: translateX(0px); }
 
 .modal {
   display: none;
