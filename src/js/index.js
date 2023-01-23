@@ -8,21 +8,48 @@ const body = document.body;
 const brendsMore = document.querySelector(".repair-brend__more-button");
 const technicsMore = document.querySelector(".repair-technicals__more-button");
 const aboutMoreBtn = document.querySelector(".about__more-button");
-const feedbackMsgBtn = document.querySelector(".feedback-icon__item--message");
-const feedbackPhoneBtn = document.querySelector(".feedback-icon__item--phone");
+const feedbackMsgBtn = document.querySelectorAll(".feedback-icon__item--message");
+const feedbackPhoneBtn = document.querySelectorAll(".feedback-icon__item--phone");
 const feedbackMsg = document.querySelector("#feedback");
 const feedbackPhone = document.querySelector("#feedback-phone");
 const modalClose = document.querySelector("#closefbmsg");
 const mdalClosePhone = document.querySelector("#closefbphone");
 
+
 //modal feed-back
-feedbackMsgBtn.onclick = () => {
+feedbackMsgBtn[0].onclick = () => {
   feedbackMsg.classList.add("active");
   burgerMenu.classList.remove("active");
   tabIndex(feedbackMsg);
 };
 
-feedbackPhoneBtn.onclick = () => {
+feedbackMsgBtn[1].onclick = () => {
+  feedbackMsg.classList.add("active");
+  burgerMenu.classList.remove("active");
+  tabIndex(feedbackMsg);
+};
+
+document.onclick = ({ target }) => {
+  if (
+    !target.closest("#feedback") &&
+    feedbackMsg.classList.contains("active") &&
+    !target.closest(".feedback-icon__item--message")
+  ) {
+    feedbackMsg.classList.remove("active")
+  } else if (!target.closest("#feedback-phone") &&
+  feedbackPhone.classList.contains("active") &&
+  !target.closest(".feedback-icon__item--phone")) {
+    feedbackPhone.classList.remove("active")
+  }
+};
+
+feedbackPhoneBtn[0].onclick = () => {
+  feedbackPhone.classList.add("active");
+  burgerMenu.classList.remove("active");
+  tabIndex(feedbackPhone);
+};
+
+feedbackPhoneBtn[1].onclick = () => {
   feedbackPhone.classList.add("active");
   burgerMenu.classList.remove("active");
   tabIndex(feedbackPhone);
@@ -35,6 +62,7 @@ modalClose.onclick = () => {
 mdalClosePhone.onclick = () => {
   feedbackPhone.classList.remove("active");
 };
+
 
 //about more text
 aboutMoreBtn.onclick = () => {
