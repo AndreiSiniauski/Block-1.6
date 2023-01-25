@@ -11,6 +11,99 @@
   </head>
   <body class="page">
 
+    <!--Feedback start-->
+
+    <div class="modal" id="feedback">
+      <div class="modal__container">
+        <button class="modal__close-btn close-btn"
+                id="closefbmsg"
+                type="button"
+                title="Закрыть">
+        </button>
+        <h2 class="modal__title title">Обратная связь</h2>
+        <form class="modal-feedback" action="/" method="post">
+          <label>
+            <input class="modal-feedback__input input"
+                   type="text"
+                   name="name"
+                   placeholder="Имя"
+                   required/>
+          </label>
+          <label>
+            <input  class="modal-feedback__input input"
+                    type="tel"
+                    name="telephone"
+                    placeholder="Телефон"
+                    required/>
+          </label>
+          <label>
+            <input  class="modal-feedback__input input"
+                    type="email"
+                    name="email"
+                    placeholder="Электронная почта"/>
+          </label>
+          <label>
+            <textarea
+              class="modal-feedback__input input"
+              name="message"
+              id="message"
+              placeholder="Сообщение"
+              cols="30"
+              rows="5"
+            ></textarea>
+          </label>
+            <p class="modal-feedback__text">
+                Нажимая “отправить”, вы даете согласие на
+                <a class="modal-feedback__link" href="#" title="Согласие на обработку персональных данных">
+                    обработку персональных данных
+                </a>
+                и соглашаетесь с нашей
+                <a class="modal-feedback__link" href="#" title="политика конфиденциальности">
+                    политикой конфиденциальности
+                </a>
+            </p>
+            <input class="btn modal-feedback__btn" type="submit" />
+        </form>
+      </div>
+    </div>
+
+    <!--Feedback end-->
+
+    <!--Feedback-call start-->
+
+    <div class="modal" id="feedback-phone">
+      <div class="modal__container">
+        <button class="close-btn modal__close-btn"
+                id="closefbphone"
+                type="button"
+                title="Закрыть">
+        </button>
+        <h2 class="title modal__title">Заказать звонок</h2>
+        <form class="modal-feedback" action="/" method="post">
+          <label>
+            <input  class="input modal-feedback__input"
+                    type="tel"
+                    name="telephone"
+                    placeholder="Телефон"
+                    required/>
+          </label>
+          <p class="modal-feedback__text">
+            Нажимая “отправить”, вы даете согласие на
+            <a class="modal-feedback__link" href="#" title="Согласие на обработку персональных данных">
+                обработку персональных данных
+            </a>
+            и соглашаетесь с нашей
+            <a class="modal-feedback__link" href="/" title="политика конфиденциальности">
+              политикой конфиденциальности
+            </a>
+          </p>
+          <input class="modal-feedback__btn btn" type="submit" />
+        </form>
+      </div>
+    </div>
+
+    <!--Feedback-call end-->
+
     <!--page header start-->
 
     <header class="page-header">
@@ -151,98 +244,8 @@
 
             <!--Burger-menu end-->
 
-            <!--Feedback start-->
 
-            <div class="modal" id="feedback">
-              <div class="modal__container">
-                <button class="modal__close-btn close-btn"
-                        id="closefbmsg"
-                        type="button"
-                        title="Закрыть">
-                </button>
-                <h2 class="modal__title title">Обратная связь</h2>
-                <form class="modal-feedback" action="/" method="post">
-                  <label>
-                    <input class="modal-feedback__input input"
-                           type="text"
-                           name="name"
-                           placeholder="Имя"
-                           required/>
-                  </label>
-                  <label>
-                    <input  class="modal-feedback__input input"
-                            type="tel"
-                            name="telephone"
-                            placeholder="Телефон"
-                            required/>
-                  </label>
-                  <label>
-                    <input  class="modal-feedback__input input"
-                            type="email"
-                            name="email"
-                            placeholder="Электронная почта"/>
-                  </label>
-                  <label>
-                    <textarea
-                      class="modal-feedback__input input"
-                      name="message"
-                      id="message"
-                      placeholder="Сообщение"
-                      cols="30"
-                      rows="5"
-                    ></textarea>
-                  </label>
-                    <p class="modal-feedback__text">
-                        Нажимая “отправить”, вы даете согласие на
-                        <a class="modal-feedback__link" href="#" title="Согласие на обработку персональных данных">
-                            обработку персональных данных
-                        </a>
-                        и соглашаетесь с нашей
-                        <a class="modal-feedback__link" href="#" title="политика конфиденциальности">
-                            политикой конфиденциальности
-                        </a>
-                    </p>
-                    <input class="btn modal-feedback__btn" type="submit" />
-                </form>
-              </div>
-            </div>
-
-            <!--Feedback end-->
-
-            <!--Feedback-call start-->
-
-            <div class="modal" id="feedback-phone">
-              <div class="modal__container">
-                <button class="close-btn modal__close-btn"
-                        id="closefbphone"
-                        type="button"
-                        title="Закрыть">
-                </button>
-                <h2 class="title modal__title">Заказать звонок</h2>
-                <form class="modal-feedback" action="/" method="post">
-                  <label>
-                    <input  class="input modal-feedback__input"
-                            type="tel"
-                            name="telephone"
-                            placeholder="Телефон"
-                            required/>
-                  </label>
-                  <p class="modal-feedback__text">
-                    Нажимая “отправить”, вы даете согласие на
-                    <a class="modal-feedback__link" href="#" title="Согласие на обработку персональных данных">
-                        обработку персональных данных
-                    </a>
-                    и соглашаетесь с нашей
-                    <a class="modal-feedback__link" href="/" title="политика конфиденциальности">
-                      политикой конфиденциальности
-                    </a>
-                  </p>
-                  <input class="modal-feedback__btn btn" type="submit" />
-                </form>
-              </div>
-            </div>
-
-            <!--Feedback-call end-->
+            
 
             <div class="about__header">
               <h1 class="title about__title">Услуги и сервисы</h1>

@@ -16,18 +16,30 @@ const modalClose = document.querySelector("#closefbmsg");
 const mdalClosePhone = document.querySelector("#closefbphone");
 
 
+
+
 //modal feed-back
 feedbackMsgBtn[0].onclick = () => {
   feedbackMsg.classList.add("active");
   burgerMenu.classList.remove("active");
-  window.scrollTo(0,0);
 };
+
+feedbackMsgBtn[0].addEventListener('click', () => {
+  let currentY = `${window.pageYOffset}px`;
+  feedbackMsg.style.top = currentY;
+});
 
 feedbackMsgBtn[1].onclick = () => {
   feedbackMsg.classList.add("active");
   burgerMenu.classList.remove("active");
-  window.scrollTo(0,0);
 };
+
+feedbackMsgBtn[1].addEventListener('click', () => {
+  let currentY = `${window.pageYOffset}px`;
+  feedbackMsg.style.top = currentY;
+  console.log(currentY)
+});
+
 
 document.onclick = ({ target }) => {
   if (
@@ -43,17 +55,26 @@ document.onclick = ({ target }) => {
   }
 };
 
+
 feedbackPhoneBtn[0].onclick = () => {
   feedbackPhone.classList.add("active");
   burgerMenu.classList.remove("active");
-  window.scrollTo(0,0);
 };
+
+feedbackPhoneBtn[0].addEventListener('click', () => {
+  let currentY = `${window.pageYOffset}px`;
+  feedbackPhone.style.top = currentY;
+});
 
 feedbackPhoneBtn[1].onclick = () => {
   feedbackPhone.classList.add("active");
   burgerMenu.classList.remove("active");
-  window.scrollTo(0,0);
 };
+
+feedbackPhoneBtn[1].addEventListener('click', () => {
+  let currentY = `${window.pageYOffset}px`;
+  feedbackPhone.style.top = currentY;
+});
 
 modalClose.onclick = () => {
   feedback.classList.remove("active");
