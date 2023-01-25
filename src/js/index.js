@@ -20,11 +20,13 @@ const mdalClosePhone = document.querySelector("#closefbphone");
 feedbackMsgBtn[0].onclick = () => {
   feedbackMsg.classList.add("active");
   burgerMenu.classList.remove("active");
+  window.scrollTo(0,0);
 };
 
 feedbackMsgBtn[1].onclick = () => {
   feedbackMsg.classList.add("active");
   burgerMenu.classList.remove("active");
+  window.scrollTo(0,0);
 };
 
 document.onclick = ({ target }) => {
@@ -44,11 +46,13 @@ document.onclick = ({ target }) => {
 feedbackPhoneBtn[0].onclick = () => {
   feedbackPhone.classList.add("active");
   burgerMenu.classList.remove("active");
+  window.scrollTo(0,0);
 };
 
 feedbackPhoneBtn[1].onclick = () => {
   feedbackPhone.classList.add("active");
   burgerMenu.classList.remove("active");
+  window.scrollTo(0,0);
 };
 
 modalClose.onclick = () => {
